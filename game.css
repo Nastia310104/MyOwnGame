@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: bisque;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    height: 100vhs;
+    overflow: hidden;
+    margin: 0;  
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    transition: margin 0.5s ease-out;
+    background: linear-gradient(90deg, #362520 0%, #110502 100%);
+    position: relative;
+}
+
+.board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 700px;
+    height: 500px;
+    background-image: url(https://phonoteka.org/uploads/posts/2021-04/1619790273_4-phonoteka_org-p-anime-fon-kafe-na-ulitse-6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    box-shadow: 0 0 20px #754f43, 0 0 40px #ffd9b6;
+    overflow: hidden;
+    opacity: 0.6;
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 150px;
+}
+
+.score {
+    align-items: center;
+    justify-content: center;
+}
+
+.final_table  {
+    background-color: rgba(230, 208, 204, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.hide {
+    opacity: 0;
+    animation-play-state: paused;
+}
+
+.cappuccini {
+    width: 70px;
+    height: 100px;
+    /* background-color: cornflowerblue; */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    background-image: url(Капстер.png);
+    background-size: cover;
+}
+
+.coffee {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* background-color: #000; */
+    position: absolute;
+    top: 0;
+    animation: drop linear infinite;
+    animation-duration: 5000ms;
+    background-size: cover;
+}
+
+@keyframes drop {
+    to {
+      top: 100%;
+    }
+  }
+
+.trash {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* background-color: rgb(0, 255, 76); */
+    position: absolute;
+    top: 0;
+    animation: drop 5s linear infinite;
+    background-size: cover;
+
+}
+
+a {
+    color: rgb(231, 201, 179);
+    text-decoration: none;
+    position: absolute;
+    bottom: 80px;
+    padding: 22px;
+    font-size: 40px;
+    text-shadow: 4px 6px 20px #1d0303, -4px -6px 40px #ffd9b6;
+
+}
+
+a:hover {
+    border: 2px solid rgb(77, 46, 21);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 4px 6px 20px #1d0303, -4px -6px 40px #ffd9b6;
+    background-color: #3f2b25;
+}
+
+h3 {
+    color: rgb(255, 208, 174);
+    padding-bottom: 30px;
+    text-shadow: 4px 6px 20px #1d0303, -4px -6px 40px #ffd9b6;
+}
+
+p {
+    max-width: 700px;
+    text-align: center;
+    margin: 0;
+    font-size: 28px;
+    color: rgb(255, 165, 101);
+}
+
+.screen.up {
+    margin-top: -100vh;
+  }
+
+
+.coffee.c0 {
+    background-image: url(кофе1.png);
+    /* background-size: cover; */
+
+}
+
+.coffee.c1 {
+    background-image: url(кофе2.png);
+    /* background-size: cover; */
+
+}
+
+.coffee.c2 {
+    background-image: url(кофе3.png);
+    /* background-size: cover; */
+
+}
+
+.coffee.c3 {
+    background-image: url(кофе4.png);
+    /* background-size: cover; */
+
+}
+
+/* .coffee.c4 {
+    background-image: url(кофе5.png);
+    background-size: cover;
+
+} */
+
+.coffee.c4 {
+    background-image: url(кофе6.png);
+    /* background-size: cover; */
+
+}
+
+.right {
+    transform: scale(-1, 1);
+}
+
+h4 {
+    color: rgb(20, 9, 1);
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.trash.t0 {
+    background-image: url(мусор1.png);
+}
+.trash.t1 {
+    background-image: url(мусор2.png);
+}
+.trash.t2 {
+    background-image: url(мусор3.png);
+}
+.trash.t3 {
+    background-image: url(мусор4.png);
+}
+.trash.t4 {
+    background-image: url(мусор5.png);
+}

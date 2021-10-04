@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cappuccini</title>
+        <meta name="description" content="Cappuccini game">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="game.css">
+    </head>
+    <body>
+        <div class="screen">
+            <a href="#" class="btnstart" id="start">Начать игру</a>    
+            <div class="start">
+                <h3>Игра "Синьор Капучини"</h3>
+                <p>Помоги капучинику поймать как можно больше чашек кофе.</p>
+                <p>Избегай падающего мусора!</p>
+            </div>
+        </div>
+        <div class="screen">
+            <div class="board">
+                <div class="final_table"> 
+                    <h4>Нажми ПРОБЕЛ чтобы начать игру</h4>
+                    <!-- <h4>Нажми ESCAPE чтобы завершить игру</h4> -->
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="screen">
+            <div class="board" id="desk">
+                <div class="cappuccini" id="actor"></div>
+            </div>
+        </div>
+        <div class="screen">
+            <div class="board">
+                <div class="final_table"> 
+                    <!-- include db for gamers score table -->
+                    <div>Ваш счёт: <span class="score" id="score"></span></div>
+                    <div>Ваше время: <span class="timer"></span></div>
+                </div>
+            </div>
+            
+        </div>
+        <script src="gameKeys.js" async defer></script>
+    </body>
+</html>
